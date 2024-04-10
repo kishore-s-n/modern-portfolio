@@ -235,12 +235,12 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-28 mt-12 w-[80%]">
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Git
+                  Git & Github
                 </p>
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Agile Development
+                  Agile Methodology
                 </p>
               </div>
               <div>
@@ -255,7 +255,7 @@ function App() {
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Teamwork
+                  Critical Thinking
                 </p>
               </div>
               <div>
@@ -271,13 +271,11 @@ function App() {
                 </p>
               </div>
               <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  B2 english
-                </p>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">Team Management</p>
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  RWD
+                  RND
                 </p>
               </div>
               <div>
