@@ -3,6 +3,7 @@ import { LoadingScreen } from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
 import Home from "./components/sections/Home";
+import About from "./components/sections/About";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -23,6 +24,7 @@ const App = () => {
 
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
+        <About />
       </div>
     </>
   );
