@@ -17,7 +17,6 @@ const Projects = () => {
                 <h3>{project.intro}</h3>
                 <div className="flex flex-wrap gap-2.5 mt-5">
                   {project.skills.map((skill, skillIndex) => (
-
                     <span key={skillIndex} className="text-sm px-3 py-1 rounded-lg bg-blue-500/10 text-blue-500">{skill}</span>
                   ))}
                 </div>

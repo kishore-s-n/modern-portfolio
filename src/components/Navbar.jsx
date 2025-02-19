@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { navContents } from "../constants/constant";
 
 // eslint-disable-next-line react/prop-types
-const Navbar = ({ menuOpen, setMenuOpen }) => {
+const Navbar = ({ setMenuOpen }) => {
   useEffect(() => {}, []);
   return (
     <nav className='fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg '>
