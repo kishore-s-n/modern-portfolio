@@ -33,12 +33,12 @@ const aboutSectionContent = {
   ],
   Boxes: [
     {
-      title: "Education",
-      items: ["B.E ECE at PSNA College of Enginerring and Technology (2021-2025)", "Relevant Course Work: Data Structures, Full Stack Development, Web Design, React JS Course, JavaScript Complete Course"]
+      title: "📚 Education",
+      content: ["B.E ECE at PSNA College of Enginerring and Technology (2021-2025)", "Relevant Course Work: Data Structures, Full Stack Development"]
     },
     {
-      title: "Work Experience",
-      items: ["IITM Hackathon: ", "ExpressJS"]
+      title: "💡 Project Experience",
+      content: ["Developed several sites with responsive UI", "Designed and developed a microservice architectural backend and several monolithic backends"]
     }
   ]
 }
