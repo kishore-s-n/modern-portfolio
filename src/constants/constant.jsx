@@ -42,4 +42,58 @@ const aboutSectionContent = {
     }
   ]
 }
-export { navContents, loadingScreenString, homeSectionContent, aboutSectionContent };
+
+const projectSectionContent = [{
+  "id": 1,
+  "title": "Microservice Back-End",
+  "intro": "Developed a scalable backend system for a room booking platform using microservices architecture.",
+  "content": [
+    "heading Project Overview",
+    "para A modular backend was built with Spring Boot and Node.js to handle authentication, booking, and payments independently. Eureka Service Discovery facilitated inter-service communication, while API Gateway centralized authentication and request routing. The system is designed to ensure high availability, fault tolerance, and seamless scalability.",
+
+    "heading Key Features",
+    "list Modular microservices enable independent deployment and scalability, allowing teams to work on different services without affecting others.",
+    "list Eureka ensures dynamic service discovery and seamless inter-service communication, reducing the complexity of managing multiple endpoints.",
+    "list API Gateway provides secure centralized routing and authentication, ensuring that only authorized requests reach the appropriate services.",
+    "list Dockerized services simplify containerized deployment and improve portability, making it easier to deploy across various environments such as development, staging, and production.",
+    "list Implemented logging and monitoring with tools like ELK Stack and Prometheus to track service health and troubleshoot issues efficiently."
+  ],
+  "skills": ["Spring Boot", "Node.js", "Eureka", "API Gateway", "Docker", "ELK Stack", "Prometheus"]
+},
+{
+  "id": 2,
+  "title": "Frontend Development",
+  "intro": "Created modern frontend applications focusing on responsive UI/UX design principles.",
+  "content": [
+    "heading Project Overview",
+    "para Developed multiple frontend projects using React.js and Tailwind CSS, including e-commerce platforms, blogs, and landing pages. These emphasize dynamic interfaces, optimal user experience, and fast loading times. Each project adheres to modern design standards, ensuring accessibility and usability across devices.",
+
+    "heading Key Features",
+    "list Responsive UI designed with Tailwind CSS ensures compatibility across devices, providing users with a consistent experience on mobile, tablet, and desktop.",
+    "list State management implemented using React hooks and Context API for efficient data handling, enabling real-time updates and seamless interactions.",
+    "list Optimized performance achieved through lazy loading and modular component structures, reducing initial load times and improving overall application speed.",
+    "list Integrated third-party libraries like Redux for complex state management and Axios for efficient API calls, enhancing the robustness of the applications.",
+    "list Conducted thorough testing using Jest and React Testing Library to ensure all components function correctly and meet quality standards."
+  ],
+  "skills": ["React.js", "Tailwind CSS", "JavaScript", "HTML", "CSS", "Redux", "Axios", "Jest", "React Testing Library"]
+},
+{
+  "id": 3,
+  "title": "Low-Level Design (LLD) Projects",
+  "intro": "Designed low-level systems for real-world applications following SOLID principles.",
+  "content": [
+    "heading Project Overview",
+    "para Implemented LLD for applications like Ola/Uber and Swiggy/Zomato using Java. The designs ensure maintainability, scalability, and adherence to best practices in software engineering. Each project involved detailed planning and iterative refinement to create efficient and reliable systems.",
+
+    "heading Key Features",
+    "list Ride management system for Ola/Uber includes driver-rider allocation logic, real-time tracking, and fare calculation algorithms to enhance user experience.",
+    "list Order processing system for Swiggy/Zomato handles restaurant orders and delivery workflows, ensuring timely deliveries and accurate order status updates.",
+    "list SOLID principles and design patterns form the foundation of scalable and robust architecture, promoting code reusability and easier maintenance.",
+    "list Utilized database optimization techniques such as indexing and query optimization to handle large volumes of data efficiently.",
+    "list Incorporated unit testing frameworks like JUnit to validate functionality and prevent regressions during future updates."
+  ],
+  "skills": ["Java", "System Design", "SOLID Principles", "Design Patterns", "JUnit"]
+}]
+
+
+export { navContents, loadingScreenString, homeSectionContent, aboutSectionContent, projectSectionContent };
