@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
+
 import { loadingScreenString } from "../constants/constant";
 // eslint-disable-next-line react/prop-types
-export const LoadingScreen = ({ onComplete }) => {
+export const LoadingScreen = ({ onComplete, loadText }) => {
   const [text, setText] = useState("");
-  let fultxt = loadingScreenString;
-
+  const txt = loadingScreenString;
   useEffect(() => {
     let ind = 0;
     const interval = setInterval(() => {
-      setText(fultxt.substring(0, ind++));
-      if (ind > fultxt.length) {
+      setText(txt.substring(0, ind++));
+      if (ind > txt.length) {
         clearInterval(interval);
         setTimeout(() => {
           onComplete();

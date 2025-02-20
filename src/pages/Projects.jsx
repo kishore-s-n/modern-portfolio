@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex justify-center items-center container mx-auto py-20">
       <RevealOnScroll>
-        <h1 className="md:text-5xl text-3xl font-bold text-center bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent mb-8">
+        <h1 className="text-5xl font-bold text-center bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent mb-8">
           Projects
         </h1>
         <div className="max-w-5xl flex flex-col gap-10 mx-[5%]">
