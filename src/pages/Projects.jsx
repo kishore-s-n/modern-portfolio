@@ -5,12 +5,12 @@ import { projectSectionContent as projects } from '../constants/constant';
 
 const Projects = () => {
   return (
-    <section id="projects" className="container mx-auto p-4">
+    <section id="projects" className="min-h-screen flex justify-center items-center container mx-auto py-20">
       <RevealOnScroll>
         <h1 className="md:text-5xl text-3xl font-bold text-center bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent mb-8">
           Projects
         </h1>
-        <div className="flex flex-col gap-10 mx-[10%]">
+        <div className="max-w-5xl flex flex-col gap-10 mx-[5%]">
           {projects.map((project, index) => (
             <div key={index} id={`project-${index}`} className="border border-white/10 rounded-lg p-5 hover:-translate-y-2 transition-all duration-200">
               <Link to={`/project/${index + 1}`} ><h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">{project.title}</h2>

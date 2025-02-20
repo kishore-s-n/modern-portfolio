@@ -3,7 +3,7 @@ import { loadingScreenString } from "../constants/constant";
 // eslint-disable-next-line react/prop-types
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
-  const fultxt = loadingScreenString;
+  let fultxt = loadingScreenString;
 
   useEffect(() => {
     let ind = 0;
@@ -16,7 +16,6 @@ export const LoadingScreen = ({ onComplete }) => {
         }, 1000);
       }
     }, 100);
-
     return () => {
       clearInterval(interval);
     };

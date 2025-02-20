@@ -75,7 +75,6 @@ const projectSectionContent = [
       "list Eureka ensures dynamic service discovery and seamless inter-service communication, reducing the complexity of managing multiple endpoints.",
       "list API Gateway provides secure centralized routing and authentication, ensuring that only authorized requests reach the appropriate services.",
       "list Dockerized services simplify containerized deployment and improve portability, making it easier to deploy across various environments such as development, staging, and production.",
-      "list Implemented logging and monitoring with tools like ELK Stack and Prometheus to track service health and troubleshoot issues efficiently.",
     ],
     skills: ["Spring Boot", "Node.js", "Eureka", "API Gateway", "Docker"],
     initNodes: [
@@ -85,6 +84,7 @@ const projectSectionContent = [
         data: { label: "React Client" },
         position: { x: 400, y: 100 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -94,8 +94,9 @@ const projectSectionContent = [
       {
         id: "2",
         data: { label: "API Gateway" },
-        position: { x: 600, y: 100 },
+        position: { x: 600, y: 200 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -106,6 +107,7 @@ const projectSectionContent = [
         data: { label: "Booking Service (Spring Boot)" },
         position: { x: 50, y: 300 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -116,6 +118,7 @@ const projectSectionContent = [
         data: { label: "Payment Service (Spring Boot)" },
         position: { x: 250, y: 300 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -126,6 +129,7 @@ const projectSectionContent = [
         data: { label: "Customer/User Service (Spring Boot)" },
         position: { x: 450, y: 300 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -136,6 +140,7 @@ const projectSectionContent = [
         data: { label: "Host Service (Node.js)" },
         position: { x: 650, y: 300 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -146,6 +151,7 @@ const projectSectionContent = [
         data: { label: "Report Service (Node.js)" },
         position: { x: 850, y: 300 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -156,6 +162,7 @@ const projectSectionContent = [
         data: { label: "Rooms Service (Node.js)" },
         position: { x: 1050, y: 300 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -166,6 +173,7 @@ const projectSectionContent = [
         data: { label: "Review Service (Node.js)" },
         position: { x: 1250, y: 300 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -174,8 +182,9 @@ const projectSectionContent = [
       {
         id: "10",
         data: { label: "Netflix Eureka (Spring Boot)" },
-        position: { x: 400, y: 400 },
+        position: { x: 800, y: 100 },
         style: {
+          fontSize: "15px",
           backgroundColor: "#F0FFFF",
           color: "#0000FF",
           borderRadius: "10px",
@@ -183,13 +192,13 @@ const projectSectionContent = [
       },
     ],
     initEdges: [
-      { id: "e1-3", source: "1", target: "3" },
-      { id: "e1-4", source: "1", target: "4" },
-      { id: "e1-5", source: "1", target: "5" },
-      { id: "e1-6", source: "1", target: "6" },
-      { id: "e1-7", source: "1", target: "7" },
-      { id: "e1-8", source: "1", target: "8" },
-      { id: "e1-9", source: "1", target: "9" },
+      { id: "e1-3", source: "1", target: "2" },
+      { id: "e1-4", source: "1", target: "2" },
+      { id: "e1-5", source: "1", target: "2" },
+      { id: "e1-6", source: "1", target: "2" },
+      { id: "e1-7", source: "1", target: "2" },
+      { id: "e1-8", source: "1", target: "2" },
+      { id: "e1-9", source: "1", target: "2" },
       { id: "e2-3", source: "2", target: "3" },
       { id: "e2-4", source: "2", target: "4" },
       { id: "e2-5", source: "2", target: "5" },
@@ -197,13 +206,14 @@ const projectSectionContent = [
       { id: "e2-7", source: "2", target: "7" },
       { id: "e2-8", source: "2", target: "8" },
       { id: "e2-9", source: "2", target: "9" },
-      { id: "e3-10", source: "3", target: "10" },
-      { id: "e4-10", source: "4", target: "10" },
-      { id: "e5-10", source: "5", target: "10" },
-      { id: "e6-10", source: "6", target: "10" },
-      { id: "e7-10", source: "7", target: "10" },
-      { id: "e8-10", source: "8", target: "10" },
-      { id: "e9-10", source: "9", target: "10" },
+      { id: "e10-2", source: "10", target: "2" },
+      { id: "e10-3", source: "10", target: "3" },
+      { id: "e10-4", source: "10", target: "4" },
+      { id: "e10-5", source: "10", target: "5" },
+      { id: "e10-6", source: "10", target: "6" },
+      { id: "e10-7", source: "10", target: "7" },
+      { id: "e10-8", source: "10", target: "8" },
+      { id: "e10-9", source: "10", target: "9" },
     ],
   },
   {
