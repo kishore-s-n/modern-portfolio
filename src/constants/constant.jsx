@@ -246,25 +246,89 @@ const projectSectionContent = [
     ],
     initNodes: [
       {
-        id: "1",
-        type: "input",
-        data: { label: "User Interaction" },
-        position: { x: 250, y: 25 },
+        id: "loadBalancer",
+        data: { label: "Load Balancer" },
+        position: { x: 400, y: 100 },
       },
       {
-        id: "2",
-        data: { label: "React Component" },
-        position: { x: 250, y: 100 },
+        id: "frontendApp",
+        data: { label: "Frontend App (React/Vue)" },
+        position: { x: 400, y: 250 },
       },
       {
-        id: "3",
-        data: { label: "State Management" },
-        position: { x: 250, y: 200 },
+        id: "cdn",
+        data: { label: "CDN (Static Assets)" },
+        position: { x: 700, y: 250 },
+      },
+      {
+        id: "stateManagement",
+        data: { label: "State Management (Redux/Zustand)" },
+        position: { x: 250, y: 400 },
+      },
+      {
+        id: "routing",
+        data: { label: "Routing (React Router/Next.js)" },
+        position: { x: 550, y: 400 },
+      },
+      {
+        id: "componentLibrary",
+        data: { label: "Component Library (Tailwind/MUI)" },
+        position: { x: 400, y: 550 },
+      },
+      {
+        id: "apiCalls",
+        data: { label: "API Calls (Fetch/Axios)" },
+        position: { x: 250, y: 700 },
+      },
+      {
+        id: "errorHandling",
+        data: { label: "Error Handling (Sentry/LogRocket)" },
+        position: { x: 550, y: 700 },
       },
     ],
     initEdges: [
-      { id: "e1-2", source: "1", target: "2" },
-      { id: "e2-3", source: "2", target: "3" },
+      {
+        id: "loadBalancer-frontendApp",
+        source: "loadBalancer",
+        target: "frontendApp",
+        label: "Routes Traffic To",
+      },
+      {
+        id: "frontendApp-cdn",
+        source: "frontendApp",
+        target: "cdn",
+        label: "Loads Assets From",
+      },
+      {
+        id: "frontendApp-stateManagement",
+        source: "frontendApp",
+        target: "stateManagement",
+        label: "Manages State",
+      },
+      {
+        id: "frontendApp-routing",
+        source: "frontendApp",
+        target: "routing",
+        label: "Handles Navigation",
+      },
+      {
+        id: "frontendApp-componentLibrary",
+        source: "frontendApp",
+        target: "componentLibrary",
+        label: "Uses UI Components",
+      },
+      {
+        id: "frontendApp-apiCalls",
+        source: "frontendApp",
+        target: "apiCalls",
+        label: "Fetches Data",
+      },
+      {
+        id: "frontendApp-errorHandling",
+        source: "frontendApp",
+        target: "errorHandling",
+        label: "Logs Errors",
+      },
     ],
   },
   {
@@ -291,27 +355,146 @@ const projectSectionContent = [
       "Design Patterns",
       "JUnit",
     ],
+
     initNodes: [
+      { id: "trip", data: { label: "Trip" }, position: { x: 400, y: 100 } },
       {
-        id: "1",
-        type: "input",
-        data: { label: "User Request" },
-        position: { x: 250, y: 25 },
+        id: "tripMetaData",
+        data: { label: "TripMetaData" },
+        position: { x: 800, y: 100 },
+      },
+
+      {
+        id: "tripMgr",
+        data: { label: "TripMgr" },
+        position: { x: 400, y: 250 },
       },
       {
-        id: "2",
-        data: { label: "Ride Management" },
-        position: { x: 250, y: 100 },
+        id: "strategyMgr",
+        data: { label: "StrategyMgr" },
+        position: { x: 1000, y: 250 },
+      },
+
+      {
+        id: "riderMgr",
+        data: { label: "RiderMgr" },
+        position: { x: 200, y: 400 },
       },
       {
-        id: "3",
-        data: { label: "Payment Processing" },
-        position: { x: 250, y: 200 },
+        id: "driverMgr",
+        data: { label: "DriverMgr" },
+        position: { x: 600, y: 400 },
+      },
+
+      { id: "rider", data: { label: "Rider" }, position: { x: 100, y: 550 } },
+      { id: "driver", data: { label: "Driver" }, position: { x: 700, y: 550 } },
+
+      {
+        id: "pricingStrategy",
+        data: { label: "<<PricingStrategy>>" },
+        position: { x: 900, y: 400 },
+      },
+      {
+        id: "matchingStrategy",
+        data: { label: "<<DriverMatchingStrategy>>" },
+        position: { x: 1100, y: 400 },
+      },
+
+      {
+        id: "defaultPricing",
+        data: { label: "DefaultPricingStrategy" },
+        position: { x: 850, y: 550 },
+      },
+      {
+        id: "ratingBasedPricing",
+        data: { label: "RatingBasedPricingStrategy" },
+        position: { x: 950, y: 550 },
+      },
+      {
+        id: "leastTimeMatching",
+        data: { label: "LeastTimeBasedMatchingStrategy" },
+        position: { x: 1150, y: 550 },
       },
     ],
     initEdges: [
-      { id: "e1-2", source: "1", target: "2" },
-      { id: "e2-3", source: "2", target: "3" },
+      {
+        id: "trip-tripMgr",
+        source: "trip",
+        target: "tripMgr",
+        label: "Manages",
+      },
+      {
+        id: "trip-tripMetaData",
+        source: "trip",
+        target: "tripMetaData",
+        label: "Has Meta Data",
+      },
+
+      {
+        id: "tripMgr-riderMgr",
+        source: "tripMgr",
+        target: "riderMgr",
+        label: "Uses",
+      },
+      {
+        id: "tripMgr-driverMgr",
+        source: "tripMgr",
+        target: "driverMgr",
+        label: "Uses",
+      },
+
+      {
+        id: "riderMgr-rider",
+        source: "riderMgr",
+        target: "rider",
+        label: "Manages",
+      },
+      {
+        id: "driverMgr-driver",
+        source: "driverMgr",
+        target: "driver",
+        label: "Manages",
+      },
+
+      {
+        id: "tripMgr-strategyMgr",
+        source: "tripMgr",
+        target: "strategyMgr",
+        label: "Uses",
+      },
+
+      {
+        id: "strategyMgr-pricingStrategy",
+        source: "strategyMgr",
+        target: "pricingStrategy",
+        label: "Determines",
+      },
+      {
+        id: "strategyMgr-matchingStrategy",
+        source: "strategyMgr",
+        target: "matchingStrategy",
+        label: "Determines",
+      },
+
+      {
+        id: "pricingStrategy-defaultPricing",
+        source: "pricingStrategy",
+        target: "defaultPricing",
+        label: "Implements",
+      },
+      {
+        id: "pricingStrategy-ratingBasedPricing",
+        source: "pricingStrategy",
+        target: "ratingBasedPricing",
+        label: "Implements",
+      },
+
+      {
+        id: "matchingStrategy-leastTimeMatching",
+        source: "matchingStrategy",
+        target: "leastTimeMatching",
+        label: "Implements",
+      },
     ],
   },
 ];
